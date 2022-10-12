@@ -21,9 +21,27 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+let newName = "";
+let nameSpaced = "";
 
 for (let i = 0; i < hacker1.length; i++) {
-  //   hacker1[i].toUpperCase() += " "
-  console.log(hacker1[(i += 1)].toUpperCase());
+  newName += hacker1[i] + " ";
+}
+console.log(newName.toUpperCase());
+
+let nameReverse = "";
+for (let i = hacker1.length - 1; i >= 0; i--) {
+  nameReverse += hacker1[i];
+}
+console.log(nameReverse);
+
+for (let i = 0; i < hacker2.length; i++) {
+  if (hacker1[i] === hacker2[i] && hacker1.length === hacker2.length) {
+    console.log(`what?! you both have the same name?`);
+  } else if (hacker1[i] < hacker2[i]) {
+    console.log(`the driver's name goes first`);
+  } else {
+    console.log(`yo, the navigator goes first`);
+  }
   break;
 }

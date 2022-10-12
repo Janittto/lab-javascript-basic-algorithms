@@ -45,3 +45,27 @@ for (let i = 0; i < hacker2.length; i++) {
   }
   break;
 }
+
+//bonus
+
+let loremIpsum =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel placerat mi. Mauris posuere risus id dolor auctor, non auctor purus commodo. Aenean iaculis ipsum nec mi porttitor, eu fringilla lacus consectetur. Integer vel massa varius urna mollis molestie id vel libero. Donec scelerisque hendrerit libero, in lacinia libero euismod quis. In pulvinar erat a pellentesque vehicula. Ut vestibulum et ex vitae elementum. Sed non dui justo. Sed nec dapibus mi, non iaculis magna. Cras interdum ligula et nisl lobortis, ut fermentum nibh placerat. Nam vitae enim vitae mi imperdiet lobortis. Proin augue neque, posuere at sapien eu, ornare porta sapien. Nulla ullamcorper vestibulum orci. Nullam sit amet felis finibus, malesuada diam nec, dapibus felis. Pellentesque eleifend magna non imperdiet ultricies. Quisque sit amet erat eu ligula tincidunt convallis in sed nisi. Nam rutrum porttitor ornare. Morbi pellentesque tortor quis volutpat egestas. Etiam eu faucibus urna. Duis at massa purus. Suspendisse potenti. In porttitor luctus nisl, nec mollis erat molestie in. Curabitur mattis lacus nisl, quis rhoncus libero tincidunt nec. Suspendisse eget consectetur urna, sed lacinia velit. Praesent elementum dolor ac lacus aliquam posuere in id enim. Aenean condimentum dignissim nibh. Sed quis tellus velit. Mauris venenatis pretium diam. Cras ut faucibus orci. Nullam dapibus mollis sapien vel volutpat.";
+
+let wordCounter = 1;
+for (let i = 0; i < loremIpsum.length; i++) {
+  if (loremIpsum[i] === " ") {
+    ++wordCounter;
+  }
+}
+console.log(wordCounter);
+
+let etCounter = 0;
+for (let i = 0; i < loremIpsum.length; i++) {
+  if (
+    loremIpsum[i - 1] === " " &&
+    loremIpsum[i] === "e" &&
+    loremIpsum[i + 1] === "t"
+  )
+    ++etCounter;
+}
+console.log(etCounter);
